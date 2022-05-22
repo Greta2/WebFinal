@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logos/logoG.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>COVID-19 Info Page</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Advices and Recommandations</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="advices.html">Advices</a></li>
+                    <li><a href="statistic.html">Statistics</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+   
+
+    <!-- Sub head -->
+    <section class="advices-sub-head bg-light py-3">
+        <div class="container grid">
+            <div class="infoAdvice">
+                <h1 class="md">Precautions</h1>
+                <p id="info">
+                    The Pulmonary Fibrosis Foundation is closely monitoring the impact of the coronavirus outbreak. 
+                    People with chronic illnesses, such as pulmonary fibrosis, may be at higher risk for developing complications from COVID-19. 
+                    There are several everyday precautions that individuals can take to help avoid infection from the virus. 
+                    These include staying home as much as possible, limiting contact with those outside your household and avoiding non-essential visits. 
+                    As telehealth options are expanding, PF patients should contact their doctors about routine visits and testing. 
+                </p>
+            </div>
+            <video id="videoplayer" controls width="480" height="270" poster="images/advices.PNG">
+                <source src="images/Covid Advices.mp4">
+                <object type="application/x-shockwave-flash" width="480" height="270">
+                    <param name="movie" value="media/sjv_speakers_sampson.swf" />
+                    <param name="wmode" value="transparent" />
+                    <param name="quality" value="high" />
+  
+                        <object type="application/x-shockwave-flash"
+                                data="media/sjv_speakers_sampson.swf"
+                                width="480" height="270">
+                            <param name="wmode" value="transparent" />
+                            <param name="quality" value="high" />
+                        </object>
+
+                </object>    
+            </video>
+        </div>
+    </section>
+
+    <section class="fun">
+        <div class="grid grid-3">
+            <div><button id="changeColorBtn" class="btn btn-primary" >Color Change</button></div>
+            <div><p>Don't stress out. Have fun and play with us. Pay attention to the following advices :) 
+                <i class="fas fa-wand-sparkles fa-1x"></i></p></div>
+            <div><button id="animateMove" class="btn btn-primary"> Try Animation</button></div>   
+        </div>
+    </section>
+
+    <section id="tryColorChange" class="advices-main my-2">
+        <div class="container grid grid-3">
+            <div id="firstCard" class="card flex">
+                <i class="fas fa-phone-flip fa-3x"></i>
+                <p>Call your health care provider or COVID-19 hotline to find out where and when to get a test.
+                    If testing is not available, stay home and away from others for 14 days.
+                    Monitor yourself for any symptoms for 14 days.</p>
+            </div>
+            <div class="card flex">
+                <i class="fas fa-bed fa-3x"></i>
+                <p>
+                    While you are in quarantine,
+                    do not go to work, to school or to public places. Ask someone to bring you supplies.
+                    Keep the room well-ventilated.
+                </p>
+            </div>
+            <div class="card flex">
+                <i class="fas fa-handshake-simple-slash fa-3x"></i>
+                <p>
+                    Keep at least a 1-metre distance from others, even from your family members.
+                    If you share a room, place beds at least 1 metre apart.
+                </p>
+            </div>
+            <div class="card flex">
+                <i class="fas fa-mask-face fa-3x"></i>
+                <p>
+                    Wear a medical mask to protect others, including if/when you need to seek medical care.
+                </p>
+            </div>
+            <div class="card flex">
+                <i class="fas fa-hands-bubbles fa-3x"></i>
+                <p>
+                    Clean your hands frequently.
+                </p>
+            </div>
+            <div class="card flex">
+                <i class="fas fa-face-grin-hearts fa-3x"></i>
+                <p>
+                    Stay positive by keeping in touch with loved ones by phone or online, and by exercising at home.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Head -->
+        <section class="advices-head py-3" style="background:darkslategray; color: white;">
+            <div class="container grid">
+                <div>
+                    <h1 class="xl" style="font-size: 40px;">Pandemic Everyday Phrases </h1>
+                    <p class="lead">
+                        Happy Blursday! Now quit doomscrolling, grab a quarantini and please keep social distancing.
+                        OK, let me hop on a Zoom call real quick!
+                        I'm heading to a virtual concert this weekend.
+                        You're on mute!
+
+                    </p>
+                </div>
+                <img src="images/quarantine.jpg.png" alt="">
+            </div>
+        </section>
+        <script src="js/color.js"></script>
+        <script src="js/animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Acme', sans-serif;
+  color: rgb(44, 43, 43);
+  line-height: 1.8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(44, 43, 43);
+}
+
+h1,
+h2 {
+  font-weight: 50;
+  line-height: 1.2;
+  margin: 15px 5px;
+}
+
+p {
+  margin: 15px 5px;
+  overflow-wrap: normal;
+}
+
+img {
+  width: 100%;
+}
+
+img.covid{
+  border-radius: 30px;
+}
+
+.comm {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifS;
+}
+
+.fun {
+  background-color: #d4d6d8;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.green{
+  background-color: rgb(106, 165, 165);
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color:darkslategrey;
+  color: rgb(255, 255, 255);
+  height: 80px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 0 3px;
+}
+
+.navbar a:hover {
+  border-bottom: 3px rgb(255, 255, 255) solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* illustrate */
+.illustrate {
+  height: 350px;
+  background-color:darkslategray;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.illustrate h1 {
+  font-size: 30px;
+}
+
+.illustrate p {
+  margin: 20px 0;
+}
+
+.illustrate .grid {
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 40px;
+}
+
+.illustrate-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.illustrate-form {
+  position: relative;
+  top: 45px;
+  height: 355px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.illustrate-form .form-control {
+  margin: 30px 0;
+}
+
+.illustrate-form input[type='text'],
+.illustrate-form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b1b9c4;
+  width: 100%;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.illustrate-form input:focus {
+  outline: none;
+}
+
+.illustrate::before,
+.illustrate::after {
+  content: '';
+  position: absolute;
+  height: 85px;
+  bottom: -50px;
+  right: 0;
+  left: 0;
+  background: rgb(144, 165, 168);
+  transform: skewY(-3deg);
+}
+
+
+.evidences {
+  padding-top: 100px;
+  animation: slideInFromBottom 1s ease-in;
+}
+
+.evidences-heading {
+  max-width: 500px;
+  margin: auto;
+}
+
+.evidences .grid h3 {
+  font-size: 35px;
+}
+
+.evidences .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.phrase .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.phrase .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+
+.decoring{
+  height: 85px;
+  background: rgb(144, 165, 168);
+  margin-top: 50px;
+  transform: skewY(3deg);
+}
+
+/* Vaccines */
+
+.vaccines .flex {
+  flex-wrap: wrap;
+}
+
+.vaccines .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+
+.vaccines .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.vaccines .card:hover {
+  transform: translateY(-15px);
+}
+
+/* advices */
+.advices-head img,
+.statistic-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.advices-sub-head img {
+  width: 300px;
+  justify-self: flex-end;
+}
+
+.advices-main .card > i {
+  margin-right: 20px;
+}
+
+.advices-main .grid {
+  padding: 30px;
+}
+
+.advices-main .grid > *:first-child {
+  grid-column: 1 / span 3;
+}
+
+.advices-main .grid > *:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
+.infoAdvice {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.statistic-main h3 {
+  margin: 20px 0;
+}
+
+.statistic-main .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+
+.statistic-main nav li {
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #ccc solid;
+}
+
+.statistic-main a:hover {
+  font-weight: bold;
+}
+
+/* Footer */
+
+.footer{
+  background: rgb(34, 57, 57);
+}
+
+.footer .social a {
+  margin: 0 30px;
+}
+
+.fa-linkedin:hover {
+  color: #000000;
+}
+
+.fa-facebook:hover {
+  color: #1b5095;
+}
+
+.fa-instagram:hover {
+  color: #832564;
+}
+
+.logoG{
+  height: 30px;
+  width: 40px;
+  margin-left: 20px;
+  padding-top: 8px;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .illustrate .grid,
+  .evidences .grid,
+  .phrase .grid,
+  .advices-main .grid,
+  .statistic-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .illustrate {
+    height: auto;
+  }
+
+  .illustrate-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .illustrate-form {
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+
+  .phrase .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .advices-head,
+  .advices-sub-head,
+  .statistic-head {
+    text-align: center;
+  }
+
+  .logo{
+    font-size: 20px;
+  }
+
+  .advices-head img,
+  .advices-sub-head img,
+  .statistic-head img {
+    justify-self: center;
+  }
+
+  .advices-main .grid > *:first-child,
+  .advices-main .grid > *:nth-child(2) {
+    grid-column: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  
+  .logo{
+    font-size: 20px;
+  }
+
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .illustrate-form {
+    width: 300px;
+  }
+
+}

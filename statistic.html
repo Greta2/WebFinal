@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logos/logoG.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/validate.js"></script>
+    <title>COVID-19 Info Page</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Albania Statistics</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="advices.html">Advices</a></li>
+                    <li><a href="statistic.html">Statistics</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="advices-sub-head bg-light py-3">
+        <div class="container grid">
+            <div class="infoAdvice">
+                <h1 class="md">Vaccination Data</h1>
+                <p>Albania has administered at least 2,840,948 doses of COVID vaccines so far. 
+                    Assuming every person needs 2 doses, that's enough to have vaccinated about 49.8% of the country's population.
+                    During the last week reported, Albania averaged about 1,103 doses administered each day. At that rate, it will take a further 518 days to administer enough doses for another 10% of the population.
+                </p>
+            </div>
+            <img class="vaccineImg" 
+            style="height: 250px; width:460px; 
+            border: 1px solid rgb(221, 221, 221);
+            border-radius: 4px;
+            padding: 5px;" src="images/vaccinations.PNG">
+        </div>
+    </section>
+
+
+    <section class="statistic-main my-4">
+        <div class="container grid">
+            <div class="card bg-light p-3">
+                <h3 class="my-2">Important</h3>
+                <nav>
+                    <ul>
+                        <li><a class="text-primary" href="#travel">COVID-19 Travel Advisory</a></li>
+                        <li><a href="#updates">Latest Updates</a></li>
+                    </ul>
+                </nav>
+
+                <h3 class="my-2">Graphs & Data</h3>
+                <nav>
+                    <ul>
+                            <li><a href="#newCases">Cases of Infections</a></li>
+							<li><a href="#testsTaken">Tests Taken</a></li>
+                            <li><a href="#deaths">Deaths</a></li>
+							
+                    </ul>
+                </nav>
+            </div>
+            <div class="card">
+                <h2 id="travel">General COVID-19 Travel Advisory in Operation</h2>
+                <p>Some measures to contain COVID 19 remain in effect in Albania. 
+                    Facemasks must be worn while indoors and there is a night time curfew in effect from 12am (midnight) until 6am. 
+                    It is recommended that you follow the advice of local authorities at all times to avoid paying fines.
+                    It is no longer necessary to undergo quarantine on arrival in Albania from abroad, and restrictions
+                    on travel within the country no longer apply. Albania has opened land borders with neighbouring countries,
+                    and commercial flights are in operation to Tirana Airport. </p>
+
+                <button id="safety" class="btn btn-primary" 
+                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold; height: 50px;">Check Safety</button>
+                <div id="safeOrNot" class="alert alert-success" hidden>
+                    <i class="fas fa-info"></i> At this moment Albania is a safe country to travel 
+                </div>
+
+                <h3 id="updates">Latest Updates</h3>
+                <p>If you are planning to travel in Albania, please get updates on the statistics of active cases from World Health Organization  </p>
+                <a href="https://covid19.who.int/region/euro/country/al" class="btn btn-primary">Get Updates</a>
+
+                <h3>Graphs & Other Data</h3>
+                <p id="newCases">Graph of new cases</p>
+                <img src="images/cases.PNG">
+                <p class="comm">
+                    Albania is reporting 38 new infections on average each day,
+                    2% of the peak — the highest daily average reported on January 22.
+                </p>
+                <p id="testsTaken">Graph of Covid tests taken</p>
+                <img src="images/testing.PNG">
+                <p class="comm">
+                    The number of positive tests may not be equal to the number of positive cases because of reporting differences across locations. 
+                    It's also common for a single person to take more than one test. 
+                    This data uses reporting from polymerase chain reaction (PCR) and antigen tests.
+                </p>
+                <p id="deaths">Graph of deaths</p>
+                <img src="images/deaths.PNG">
+                <p class="comm">
+                   The actual death toll from COVID-19 is likely to be higher than the number of confirmed deaths
+                    this is due to limited testing and challenges in the attribution of the cause of death. 
+                    The difference between confirmed deaths and actual deaths varies by country. 
+                </p>
+
+            </div>
+        </div>
+    </section>
+   
+    <section class="statistic-head bg-primary py-3">
+        <div class="container">
+            <div class="grid grid-3">     
+                <div><img src="images/statistic.gif"></div>
+                <div><p class="lead">
+                    "Randomization is too important to be left to chance!" 
+                    Statistics are taken from World Health Organization.</p></div>
+                <div><img src="images/docs.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <noscript>
+        Your browser does not have JavaScript enabled!
+    </noscript>
+</body>
+</html>
