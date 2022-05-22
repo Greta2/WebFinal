@@ -117,8 +117,8 @@ img.covid{
 .illustrate-form {
   position: relative;
   top: 45px;
-  height: 355px;
-  width: 400px;
+  height: 370px;
+  width: 350px;
   padding: 40px;
   z-index: 100;
   justify-self: flex-end;
@@ -410,7 +410,7 @@ img.covid{
   }
   
   .illustrate-form {
-    width: 300px;
+    width: 350px;
   }
 
 }
